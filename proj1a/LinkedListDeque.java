@@ -1,7 +1,7 @@
 public class LinkedListDeque <T>{
     private int size;
 
-    public class Node{
+    private class Node{
         private T item;
         private Node next;
         private Node prev;
@@ -117,7 +117,7 @@ public class LinkedListDeque <T>{
 
     }
 
-    public T getRecursiveHelper(Node N, int index){
+    private T getRecursiveHelper(Node N, int index){
         if(index == 0){
             return N.item;
         }else{

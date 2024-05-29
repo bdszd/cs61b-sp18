@@ -9,7 +9,7 @@ public class ArrayDeque<T> {
     private int nextFirst;
     private int nextLast;
 
-    private ArrayDeque(){
+    public ArrayDeque(){
         elementData = (T[]) new Object[DEFAULT_CAPACITY];
         length = DEFAULT_CAPACITY;
         size = 0;
